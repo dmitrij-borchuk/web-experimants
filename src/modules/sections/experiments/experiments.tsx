@@ -451,10 +451,21 @@ const items = [
     title: "UX Experiments",
     preview: {
       url: "assets/img/portfolio/ux.png",
-      alt: "cabin",
+      alt: "ux",
     },
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.",
     link: "https://romantic-kowalevski-63cc5b.netlify.app",
+  },
+  {
+    id: "responsive-calendar",
+    title: "Responsive calendar",
+    preview: {
+      url: "assets/img/portfolio/calendar.png",
+      alt: "calendar",
+    },
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.",
+    link: "https://confident-easley-abeaa9.netlify.app",
   },
 ];

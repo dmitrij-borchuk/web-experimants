@@ -18,29 +18,53 @@ export function ExperimentItem({ preview, title, link }: ExperimentItemProps) {
             height: "243px",
             padding: "16px",
             backgroundColor: "#ba4c63",
-            ...(preview && {
-              backgroundImage: `url(${preview.url})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-            }),
           }}
         >
-          <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+          {preview && (
+            <img
+              className="img-fluid rounded mb-5"
+              src={preview.url}
+              alt={preview.alt}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          )}
+          <div
+            className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+            style={{ zIndex: 2 }}
+          >
             <div className="portfolio-item-caption-content text-center text-white">
               <i className="fas fa-plus fa-3x"></i>
             </div>
           </div>
 
-          <h2
-            className="portfolio-modal-title text-secondary text-uppercase mb-0"
+          <div
             style={{
-              textShadow: "#ebebeb 1px 0 1px",
+              position: "absolute",
+              top: "0",
+              left: "0",
               zIndex: 1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "100%",
+              height: "100%",
+              padding: "24px 16px",
+              backgroundColor: "rgba(255, 255, 255, 0.2)",
             }}
           >
-            {title}
-          </h2>
+            <h2
+              className="portfolio-modal-title text-secondary text-uppercase mb-0"
+              style={{
+                textShadow: "#ebebeb 1px 0 1px",
+              }}
+            >
+              {title}
+            </h2>
+          </div>
         </div>
       </a>
 
