@@ -1,7 +1,7 @@
 import { Outlet, Router, Route, RootRoute } from "@tanstack/react-router";
 import { ExperimentSection } from "./modules/sections/experiments/experiments";
-import { RouterDevtools } from "./RouterDevtools";
-import { Suspense } from "react";
+// import { RouterDevtools } from "./RouterDevtools";
+// import { Suspense } from "react";
 import { Navbar } from "./components/navbar";
 import { Hero } from "./components/hero";
 import { Footer } from "./components/footer";
@@ -11,9 +11,9 @@ const rootRoute = new RootRoute({
     <>
       <Navbar />
       <Outlet />
-      <Suspense fallback={null}>
+      {/* <Suspense fallback={null}>
         <RouterDevtools />
-      </Suspense>
+      </Suspense> */}
     </>
   ),
 });
