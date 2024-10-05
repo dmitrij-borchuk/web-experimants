@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 type ExperimentItemProps = {
   id: string;
   preview?: { url: string; alt: string };
@@ -7,13 +5,7 @@ type ExperimentItemProps = {
   description: string;
   link?: string;
 };
-export function ExperimentItem({
-  id,
-  preview,
-  title,
-  description,
-  link,
-}: ExperimentItemProps) {
+export function ExperimentItem({ preview, title, link }: ExperimentItemProps) {
   return (
     <>
       <a href={link}>
