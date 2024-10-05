@@ -23,7 +23,7 @@ export function Hero() {
           </div>
           {/* <!-- Masthead Subheading--> */}
           <p className="masthead-subheading font-weight-light mb-0">
-            Web Developer
+            Software Engineer
           </p>
         </div>
       </header>
